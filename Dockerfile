@@ -1,6 +1,7 @@
 FROM alpine:3.6
 MAINTAINER Miroslav Voda <vodamiro@gmail.com>
 LABEL Description="A Simple apache/php image using alpine Linux for Web Apps"
+# Fork of wichon/alpine-apache-php
 
 # Install gnu-libconv required by php5-iconv
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing gnu-libiconv
