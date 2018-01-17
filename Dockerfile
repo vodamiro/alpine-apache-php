@@ -8,7 +8,7 @@ RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/te
 ENV LD_PRELOAD /usr/lib/preloadable_libiconv.so
 
 # Setup apache and php
-RUN apk --update add apache2 php5-apache2 apache2-ssl openssl curl \
+RUN apk --update add apache2 php5-apache2 curl \
     php5-json php5-phar php5-openssl php5-mysql php5-curl php5-mcrypt php5-pdo_mysql php5-ctype php5-gd php5-xml php5-dom php5-iconv php5-pdo_sqlite \
     && rm -f /var/cache/apk/* \
     && mkdir /run/apache2 \
